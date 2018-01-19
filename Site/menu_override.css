@@ -1,0 +1,109 @@
+/*.region-primary-menu .menu-item,*/
+/*body:not(:target) .region-primary-menu .menu-item {*/
+/*float: left; !* LTR *!*/
+/*list-style: none;*/
+/*padding: 0 1px;*/
+/*margin: 0 0px;*/
+/*width: auto;*/
+/*height: auto;*/
+/*overflow: visible;*/
+/*}*/
+
+/*.region-primary-menu .menu a {*/
+/*color: #333;*/
+/*background: #4f225a;*/
+/*background: rgba(255, 255, 255, 0.7);*/
+/*text-shadow: 0 0px #eee;*/
+/*border-radius: 0px;*/
+/*}*/
+
+
+.region-header {
+    text-align: center !important;
+    /*background-color:black;*/
+    padding: 0;
+}
+
+.region-header .site-branding {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none;
+}
+
+@media all and (min-width: 900px) {
+    .region-header .site-branding {
+        margin-bottom: -40px;
+    }
+}
+
+@media all and (min-width: 500px) {
+    .region-secondary-menu {
+        height: 10px;
+    }
+}
+
+#header {
+    background:black;
+}
+
+@media all and (min-width: 00px) and (max-width: 905px) {
+    #header{
+
+        background-image: linear-gradient(to bottom, #fbfbfb00 0%,rgba(0,0,0,0.1) 100%),
+        URL('../images/skyline_1_gray.jpg');
+
+        background-size: cover;
+    }
+}
+
+
+.region-primary-menu .menu li a{
+    border: solid 1px black;
+    background-color:#f3f3f3ed;
+
+}
+
+.region-primary-menu .menu li a:hover{
+    background-color: #fffdf7;
+    /*     box-shadow: inset 0px 0px 20px 1px #2199ff; */
+    text-shadow: 1px 1px #c5c5c59c;
+
+}
+
+.region-primary-menu .menu li a.is-active {
+    border: 1px solid #000000;
+}
+
+.region-primary-menu .menu li a.is-active:hover {
+    box-shadow:none;
+}
+
+@media all and (min-width: 900px) {
+    #header{
+
+        background-image: linear-gradient(to bottom, #fbfbfb00 0%,rgba(0,0,0,0.1) 100%),
+        URL('../images/skyline_1_gray.jpg');
+
+        background-size: 1100px 150px;
+        background-repeat:no-repeat;
+        background-position:center;
+    }
+
+    .region-primary-menu .menu li a{
+        border-bottom: 0;
+    }
+
+    .region-primary-menu .menu li a.is-active {
+        border-bottom: 0;
+    }
+
+
+}
+
+#hader{
+    border-bottom: solid 1px black;
+}
+
+
+

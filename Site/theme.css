@@ -1,0 +1,120 @@
+.jb-idx-thb-container .jb-idx-thb-list .jb-idx-thumb,
+.jb-idx-thb-container .jb-idx-thb-list .jb-thumb-visited
+{
+	border: 2px solid black;
+	border-radius:2px;
+	margin-right: -1px !important
+}
+
+.jb-dt-main-frame .jb-dt-main-image img
+{
+	border: 2px solid black ;
+	border-radius: 4px;
+	width:98% !important;
+	height:98% !important;
+}
+
+.jb-dt-main-frame .jb-dt-main-image
+{
+	box-shadow:none !important;
+}
+
+.jb-idx-thb-container .jb-idx-thb-list .jb-idx-thumb:hover,
+.jb-idx-thb-container .jb-idx-thb-list .jb-thumb-visited:hover,
+.jb-idx-thb-container .jb-idx-thb-list .jb-thm-thumb-selected:hover
+{
+
+	box-shadow: 0 0 2px #ff08e9;
+	-webkit-filter: drop-shadow(0px 0px 2px #ff08e9);
+	filter:drop-shadow(0px 0px 2px #ff08e9)
+}
+
+.juicebox-parent .juicebox-container .jb-classifier-layer{
+	box-shadow:none !important;
+	background-image:none !important;
+}
+
+/* .jb-idx-show-area{
+    height: 95px !important;
+} */
+.field-title, .field__label,
+.field-label-below, .field-label-above{
+	font-size: 10pt;
+	font-weight:bold;
+	color:#000000;
+}
+
+.left-side {
+	display:block;
+	margin-right:auto;
+	margin-left:0%;
+	float:left;
+}
+
+.right-side {
+	display:block;
+	margin-right:auto;
+	margin-left:100px;
+	float:left;
+}
+
+.map-embed{
+	border: 2px solid black;
+	border-radius: 4px;
+}
+
+#main-wrapper,
+.layout-container
+{
+	max-width:1000px;
+}
+
+.field
+{
+	text-align:justify;
+}
+
+.file-list {
+	list-style-type: disc;
+}
+
+input, textarea {
+	border-radius:5px;
+}
+
+select, input, button {
+	font-size: 14px;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	vertical-align: middle;
+	height: 23px;
+	padding: 2px;
+	outline: none;
+	border: 1px solid black;
+	text-decoration: none;
+}
+
+textarea{
+	height: 100px;
+	resize: vertical;
+	font-size: 14px;
+	padding: 2px;
+	outline: none;
+	border: 1px solid black;
+	text-decoration: none;}
+
+textarea:focus,
+textarea:active,
+select:focus,
+select:active,
+input:focus,
+input:active {
+	border: 1px solid #9f2ecc;
+	box-shadow: 0px 0px 2px #f700ff;
+	-webkit-filter: drop-shadow(0px 0px 2px #ff08e9);
+	filter:drop-shadow(0px 0px 2px #ff08e9)
+}
+
+/* input, select, textarea {max-width:980px} */
+.form-text, .form-email {max-width:500px}
