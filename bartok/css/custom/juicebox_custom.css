@@ -1,0 +1,55 @@
+
+
+/* Factory Overrides */
+.jcbx-glry-classic .jb-idx-thb-list .jb-idx-thumb img {
+    -moz-box-shadow: none; !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+.jb-badge {background: transparent !important;}
+
+.jb-dt-main-frame .jb-dt-main-image {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+
+
+/* Custom Stuff */
+.jb-idx-thb-container .jb-idx-thb-list .jb-idx-thumb,
+.jb-idx-thb-container .jb-idx-thb-list .jb-thumb-visited
+{
+    border: 2px solid black !important;
+    border-radius:2px !important;
+    margin-right: -1px !important
+}
+
+.jb-dt-main-frame .jb-dt-main-image img
+{
+    border: 2px solid black !important;
+    border-radius: 4px !important;
+    width:98% !important;
+    height:98% !important;
+}
+
+.jb-dt-main-frame .jb-dt-main-image
+{
+    box-shadow:none !important;
+}
+
+.jb-idx-thb-container .jb-idx-thb-list .jb-idx-thumb:hover,
+.jb-idx-thb-container .jb-idx-thb-list .jb-thumb-visited:hover,
+.jb-idx-thb-container .jb-idx-thb-list .jb-thm-thumb-selected:hover
+{
+    border:2px solid #ff08e9 !important;
+}
+
+.juicebox-parent .juicebox-container .jb-classifier-layer{
+    box-shadow:none !important;
+    background-image:none !important;
+}
+
+.jcbx-glry-classic{
+    background-color:transparent !important;
+}

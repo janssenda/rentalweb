@@ -1,0 +1,496 @@
+personal_information:
+  '#type': wizard_page
+  '#title': 'Personal Information'
+  personal_details:
+    '#type': details
+    '#title': 'Personal Information'
+    '#open': true
+    first_name:
+      '#type': textfield
+      '#title': 'First name'
+      '#size': '20'
+    middle_inital:
+      '#type': textfield
+      '#title': 'Mid. In.'
+      '#size': '5'
+    last_name:
+      '#type': textfield
+      '#title': 'Last name'
+      '#size': '20'
+      '#wrapper_attributes':
+        class:
+          - line-br
+    address_line_1:
+      address:
+        '#type': textfield
+        '#title': 'Street address (Line 1)'
+        '#size': '50'
+        '#wrapper_attributes':
+          class:
+            - line-br
+    address_line_3:
+      city:
+        '#type': textfield
+        '#title': City
+        '#size': '20'
+      state:
+        '#type': select
+        '#title': State
+        '#options': state_names
+      zip:
+        '#type': textfield
+        '#title': Zip
+        '#size': '20'
+        '#input_mask': '99999[-9999]'
+        '#wrapper_attributes':
+          class:
+            - line-br
+    personal_information_1:
+      birth_date:
+        '#type': datelist
+        '#title': 'Birth date'
+        '#size': '20'
+        '#date_part_order':
+          - month
+          - day
+          - year
+      ssn:
+        '#type': textfield
+        '#title': SSN
+        '#size': '20'
+        '#wrapper_attributes':
+          class:
+            - line-br
+    contact_info_1:
+      email_address:
+        '#type': email
+        '#title': 'Email Address'
+        '#size': '20'
+        '#input_mask': '''alias'': ''email'''
+      mobile_phone:
+        '#type': textfield
+        '#title': 'Mobile phone'
+        '#size': '20'
+        '#input_mask': '(999) 999-9999'
+rental_history:
+  '#type': wizard_page
+  '#title': 'Rental History'
+  current_residence:
+    '#type': details
+    '#title': 'Current Residence'
+    '#open': true
+    rent_status:
+      '#type': radios
+      '#title': 'What is your current status?'
+      '#options':
+        rent: Rent
+        own: Own
+        other: Other
+    current_lease:
+      '#type': radios
+      '#title': 'Are you on your current lease?'
+      '#options': yes_no
+      '#states':
+        invisible:
+          ':input[name="rent_status"]':
+            value: own
+    dates_of_occupancy:
+      '#type': date
+      '#title': '<br/>Dates of Occupancy <br/> From'
+      '#size': '20'
+      '#wrapper_attributes':
+        class:
+          - line-br-pre
+      '#datepicker': true
+      '#date_date_format': m/d/Y
+    dates_of_occupancy_to_:
+      '#type': date
+      '#title': To
+      '#size': '20'
+      '#datepicker': true
+      '#date_date_format': m/d/Y
+    monthly_rent:
+      '#type': textfield
+      '#title': 'Monthly Rent'
+      '#size': '10'
+      '#input_mask': '''alias'': ''currency'''
+    landlord_s_address:
+      '#type': textfield
+      '#title': 'Landlord''s Address'
+      '#size': '30'
+      '#wrapper_attributes':
+        class:
+          - line-br-pre
+    city_landlord:
+      '#type': textfield
+      '#title': City
+      '#size': '15'
+    state_landlord:
+      '#type': select
+      '#title': State
+      '#options': state_names
+    zip_landlord:
+      '#type': textfield
+      '#title': Zip
+      '#size': '10'
+      '#input_mask': '99999[-9999]'
+      '#wrapper_attributes':
+        class:
+          - line-br
+  previous_residence:
+    '#type': details
+    '#title': 'Previous Residence'
+    '#open': true
+    rent_status_last:
+      '#type': radios
+      '#title': 'What was your status?'
+      '#options':
+        rent: Rent
+        own: Own
+        other: Other
+    lease_last:
+      '#type': radios
+      '#title': 'Were you on the lease?'
+      '#options': yes_no
+      '#states':
+        invisible:
+          ':input[name="rent_status_last"]':
+            value: own
+    dates_of_occupancy_last:
+      '#type': date
+      '#title': '<br/>Dates of Occupancy <br/> From'
+      '#size': '20'
+      '#wrapper_attributes':
+        class:
+          - line-br-pre
+      '#datepicker': true
+      '#date_date_format': m/d/Y
+    dates_of_occupancy_to_last:
+      '#type': date
+      '#title': To
+      '#size': '20'
+      '#datepicker': true
+      '#date_date_format': m/d/Y
+    monthly_rent_last:
+      '#type': textfield
+      '#title': 'Monthly Rent'
+      '#size': '10'
+      '#input_mask': '''alias'': ''currency'''
+    landlord_s_address_last:
+      '#type': textfield
+      '#title': 'Landlord''s Address'
+      '#size': '30'
+      '#wrapper_attributes':
+        class:
+          - line-br-pre
+    city_landlord_last:
+      '#type': textfield
+      '#title': City
+      '#size': '15'
+    state_landlord_last:
+      '#type': select
+      '#title': State
+      '#options': state_names
+    zip_landlord_last:
+      '#type': textfield
+      '#title': Zip
+      '#size': '10'
+      '#input_mask': '99999[-9999]'
+      '#wrapper_attributes':
+        class:
+          - line-br
+employment_history:
+  '#type': wizard_page
+  '#title': Employment
+  employer_1_detail:
+    '#type': details
+    '#title': 'Current Employer Details'
+    '#open': true
+    employer_1:
+      '#type': textfield
+      '#title': Organization
+      '#size': '30'
+    occupation_employer_1:
+      '#type': textfield
+      '#title': Occupation
+      '#size': '20'
+      '#wrapper_attributes':
+        class:
+          - line-br-pre
+    salary_employer_1:
+      '#type': textfield
+      '#title': 'Monthly Pay'
+      '#size': '15'
+      '#input_mask': '''alias'': ''currency'''
+    employ_date_employer_1:
+      '#type': date
+      '#title': 'Employed Since'
+      '#size': '20'
+      '#datepicker': true
+      '#date_date_format': m/d/Y
+      '#wrapper_attributes':
+        class:
+          - line-br
+    address_employer_1:
+      '#type': textfield
+      '#title': 'Employer''s Address'
+      '#size': '30'
+    city_employer_1:
+      '#type': textfield
+      '#title': City
+      '#size': '15'
+    state_employer_1:
+      '#type': select
+      '#title': State
+      '#options': state_names
+    zip_employer_1:
+      '#type': textfield
+      '#title': Zip
+      '#size': '10'
+      '#input_mask': '99999[-9999]'
+      '#wrapper_attributes':
+        class:
+          - line-br
+    manager_employer_1:
+      '#type': textfield
+      '#title': 'Contact Name'
+      '#size': '20'
+    phone_employer_1:
+      '#type': textfield
+      '#title': Phone
+      '#size': '20'
+      '#input_mask': '(999) 999-9999'
+  employer_2_detail:
+    '#type': details
+    '#title': 'Previous Employer Details'
+    '#open': true
+    employer_2:
+      '#type': textfield
+      '#title': Organization
+      '#size': '30'
+    occupation_employer_2:
+      '#type': textfield
+      '#title': Occupation
+      '#size': '20'
+      '#wrapper_attributes':
+        class:
+          - line-br-pre
+    salary_employer_2:
+      '#type': textfield
+      '#title': 'Monthly Pay'
+      '#size': '15'
+      '#input_mask': '''alias'': ''currency'''
+    employ_date_employer_2:
+      '#type': date
+      '#title': 'Date left'
+      '#size': '20'
+      '#datepicker': true
+      '#date_date_format': m/d/Y
+      '#wrapper_attributes':
+        class:
+          - line-br
+    address_employer_2:
+      '#type': textfield
+      '#title': 'Employer''s Address'
+      '#size': '30'
+    city_employer_2:
+      '#type': textfield
+      '#title': City
+      '#size': '15'
+    state_employer_2:
+      '#type': select
+      '#title': State
+      '#options': state_names
+    zip_employer_2:
+      '#type': textfield
+      '#title': Zip
+      '#size': '10'
+      '#input_mask': '99999[-9999]'
+      '#wrapper_attributes':
+        class:
+          - line-br
+    manager_employer_2:
+      '#type': textfield
+      '#title': 'Contact Name'
+      '#size': '20'
+    phone_employer_2:
+      '#type': textfield
+      '#title': Phone
+      '#size': '20'
+      '#input_mask': '(999) 999-9999'
+  other_income_detail:
+    '#type': details
+    '#title': 'Other Income'
+    '#open': true
+    other_income:
+      '#type': custom_composite
+      '#title': 'Other Income Sources'
+      '#wrapper_attributes':
+        class:
+          - custom-form-table
+      '#element':
+        other_income_source:
+          '#type': textfield
+          '#title': Source
+        other_income_amount:
+          '#type': textfield
+          '#title': 'Monthly Income'
+          '#input_mask': '''alias'': ''currency'''
+other_information:
+  '#type': wizard_page
+  '#title': 'Other Information'
+  student_status:
+    '#type': radios
+    '#title': 'Are you a student?'
+    '#options': yes_no
+    '#default_value': 'No'
+  school_details:
+    '#type': details
+    '#title': 'School Details'
+    '#open': true
+    '#states':
+      visible:
+        ':input[name="student_status"]':
+          value: 'Yes'
+    school_name:
+      '#type': textfield
+      '#title': 'School Name'
+      '#size': '40'
+    school_program:
+      '#type': textfield
+      '#title': Program
+      '#size': '20'
+    school_level:
+      '#type': radios
+      '#title': Status
+      '#options':
+        grad: Grad
+        undergrad: Undergrad
+    school_status:
+      '#type': radios
+      '#title': Status
+      '#options':
+        full_time: 'Full Time'
+        part_time: 'Part Time'
+    school_grad_date:
+      '#type': date
+      '#title': 'Grad. Date <br/> (expected)'
+      '#size': '20'
+      '#datepicker': true
+      '#date_date_format': m/d/Y
+    cosigner_status:
+      '#type': radios
+      '#title': 'Can you provide<br/>a cosigner?'
+      '#options': yes_no
+      '#options_display': two_columns
+  contact_details:
+    '#type': details
+    '#title': 'References and Contact'
+    '#open': true
+    reference_name:
+      '#type': textfield
+      '#title': 'Please provide one personal reference:'
+      '#size': '40'
+    reference_phone:
+      '#type': textfield
+      '#title': 'Phone Number'
+      '#size': '20'
+      '#input_mask': '(999) 999-9999'
+      '#wrapper_attributes':
+        class:
+          - line-br
+    emergency_name:
+      '#type': textfield
+      '#title': 'Emergency Contact:'
+      '#size': '40'
+    emergency_phone:
+      '#type': textfield
+      '#title': 'Phone Number'
+      '#size': '20'
+      '#input_mask': '(999) 999-9999'
+  other_information_1:
+    '#type': details
+    '#title': 'Other Information'
+    '#open': true
+    vehicle_details:
+      '#type': custom_composite
+      '#title': '<p class="form-section-title-short">List of Vehicles</p>'
+      '#wrapper_attributes':
+        class:
+          - custom-form-table
+      '#element':
+        vehicle_description:
+          '#type': textfield
+          '#title': 'Vehicle Description'
+          '#size': '30'
+        vehicle_plate:
+          '#type': textfield
+          '#title': 'License Plate'
+          '#size': '15'
+        vehicle_state2:
+          '#type': select
+          '#options': state_province_codes
+          '#title': 'Vehicle State'
+    background_questions_table:
+      '#type': likert
+      '#title': '<br/><p class="form-section-title-short">Background Questions</p>'
+      '#wrapper_attributes':
+        class:
+          - custom-form-table
+      '#questions':
+        bankruptcy: 'Have you declared bankruptcy in the past seven (7) years?'
+        eviction: 'Have you ever been evicted from a rental residence?'
+        late_payments: 'Have you had two or more late rental payments in the past year?'
+        rent_refusal: 'Have you ever willfully or intentionally refused to pay rent?'
+      '#answers':
+        'yes': 'Yes'
+        'no': 'No'
+      '#na_answer_text': ''
+    hear_about_us:
+      '#type': select
+      '#title': 'How did you hear about us?'
+      '#options':
+        referral: 'Referral from friend'
+        internet: Internet
+        sign: Sign
+        other: Other
+    heard_about_other:
+      '#type': textfield
+      '#title': Other
+      '#size': '20'
+      '#states':
+        visible:
+          ':input[name="hear_about_us"]':
+            value: other
+submission_page:
+  '#type': wizard_page
+  '#title': 'Sign and Submit'
+  signature_detail:
+    '#type': details
+    '#title': 'Digital Signature'
+    '#open': true
+    signature_agreement:
+      '#type': processed_text
+      '#display_on': both
+      '#text': |
+        <p>This is an application form. The applicant understands that all information will be verified and credit bureau reports completed, of which the contents will be shared with the Landlord. Until the landlord has approved the application, no tenancy has been created and you have no rights to this Landlord. The rental agent has no power to make any representations as to whether or not this application has been accepted or denied by the Landlord. If denied, applicant's sole remedy shall be the return of any deposit made hereunder.</p>
+
+        <p>Any person signing on behalf of an applicant warrants and represents that said person has the authority to sign on behalf of such applicant. Any deposit hereunder shall be deemed made by such applicant regardless of whether the applicant personally signs or through a representative and such by signing in such capacity waives all rights to such deposit. The undersigned warrants and represents that all statements contained in this application are true, and recognized that the landlord will execute a lease in reliance upon the truthfulness thereof.</p>
+
+        <p>Applicant agrees to execute a Standard Apartment Lease, as from time to time revised, and on the terms and conditions contained herein. Any deposit made by applicant, up to one month's rent, may be retained by Landlord as liquidated damages for failure of applicant to execute such Lease, make any payment hereunder, or if such Lease is terminated prior to occupancy for the untruth of any statement contained herein.</p>
+      '#format': full_html
+    correct_info_signature:
+      '#type': checkbox
+      '#title': 'The above information, to the best of my knowledge, is true and correct.'
+    background_check_signature:
+      '#type': checkbox
+      '#title': 'I authorize an investigation of my credit, tenant history, banking and employment for the purposes of renting a house, apartment, or condominium from this owner/manager. I authorize the checking of all the above.'
+    signature_name:
+      '#type': textfield
+      '#title': 'Your Full Name'
+      '#size': '40'
+    today_s_date:
+      '#type': date
+      '#title': 'Today''s Date'
+      '#disabled': true
+      '#default_value': '2018-01-24'

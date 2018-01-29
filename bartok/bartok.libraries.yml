@@ -1,0 +1,16 @@
+bartok-styling:
+  css:
+    theme:
+      css/buttons.css: {}
+      css/colors.css: {}
+      css/custom/forms_fields.css: {}
+      css/custom/header_page.css: {}
+      css/custom/juicebox_custom.css: {}
+      css/custom/miscellaneous.css: {}
+  js:
+    js/moment.min.js: {weight: -5}
+    js/janssen.js: {weight: -1}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings
+    - core/drupal

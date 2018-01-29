@@ -1,0 +1,191 @@
+.page-title{
+    color:#000000;
+    font-weight:bold;
+    text-shadow: 1px 2px 3px hsla(0, 0%, 0%, 0.6);
+    -webkit-font-smoothing: antialiased;  /* 6 */
+}
+
+
+select, input, textarea {
+    border-radius:5px;
+}
+
+select, input {
+    max-width:100%;
+    font-size: 14px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing:border-box;
+    vertical-align: middle;
+    height: 33px;
+    padding: 0px;
+    outline: none;
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+.form-item{
+    max-width:100% !important;
+}
+
+textarea{
+    height: 100px;
+    resize: vertical;
+    font-size: 14px;
+    padding: 2px;
+    outline: none;
+    border: 1px solid black;
+    text-decoration: none;}
+
+textarea:focus,
+textarea:active,
+select:focus,
+select:active,
+input:focus,
+input:active {
+    box-shadow: 0px 0px 2px #f700ff;
+    -webkit-filter: drop-shadow(0px 0px 2px #ff08e9);
+    filter:drop-shadow(0px 0px 2px #ff08e9)
+}
+
+input[type=radio],
+input[type=radio]:focus,
+input[type=radio]:active {
+    box-shadow: none;
+}
+
+select {
+    max-width: 200px
+}
+
+.button-form {
+    display:inline;
+}
+
+.button {
+    height: 30px
+}
+
+.button:hover, .button:active,
+.js-form-sbumit:hover, .js-form-sbumit:active,
+.form-submit:hover, .form-submit:active
+{
+    outline:none;
+    -webkit-filter: drop-shadow(0px 0px 2px #52e9ff);
+    filter:drop-shadow(0px 0px 5px #52e9ff)
+}
+
+.button--primary:hover, .button--primary:active {
+    background: #3ca0ff !important;
+}
+
+.field-title, .field__label,
+.field-label-below, .field-label-above{
+    font-size: 12pt;
+    font-weight:bold;
+    color:#000000;
+}
+
+.field {text-align:justify;}
+
+.field-name-field-price {
+    font-weight: bold;
+    margin-top:-15px;
+}
+
+.field-name-field-availability {
+    font-weight: bold;
+}
+
+.webform-submission-form {
+    max-width:800px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.custom-form-table th,
+.custom-form-table td,
+.custom-form-table tr,
+.custom-form-table tbody{
+    border: 0;
+}
+
+.custom-form-table th{
+    background-color:#fffdf7;
+    color:black;
+}
+
+.custom-form-table .draggable{
+    border: none !important;
+    padding: 0 !important;
+}
+
+.custom-form-table tr{
+    background-color:#fffdf7;
+}
+
+.custom-form-table .webform-multiple-table--handle{
+    display:none;
+}
+
+.custom-form-table .webform-multiple-table--operations
+input[alt=Add]{
+    display:none;
+}
+
+.custom-form-table .tabledrag-toggle-weight {
+    display:none;
+}
+
+.js-form-item{
+    margin-right:15px;
+    margin-bottom:-2px;
+}
+
+.js-form-type-textfield,
+.js-form-type-tel,
+.js-form-type-email,
+.js-form-type-select,
+.js-form-type-datelist,
+.js-form-type-date {
+    display:inline-block;
+}
+
+.js-webform-radios-fieldset {
+    display:inline-block;
+    vertical-align:top;
+}
+
+.js-form-item .js-form-type-radio {
+    padding:0;
+    margin:0 0 -7px 0;
+}
+
+.form-section-title p,
+p.form-section-title {
+    font-weight:bold;
+    font-size:14pt;
+    display:inline;
+}
+
+p.form-section-title-short{
+    margin-bottom:-20px;
+    font-weight:bold;
+    font-size:14pt;
+}
+
+
+.details-wrapper p{
+    text-align: justify;
+}
+
+.q-br-div {
+    margin: 0;
+    margin-bottom:-10px;
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+    display: inline-block;
+
+    max-width: 100%;
+}

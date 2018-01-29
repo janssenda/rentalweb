@@ -1,0 +1,35 @@
+.file-list {
+    list-style-type: disc;
+}
+
+.map-embed{
+    border: 2px solid black;
+    border-radius: 4px;
+    height:300px;
+    width:300px;
+}
+
+.left-side {
+    display:block;
+    margin-right:100px;
+    margin-left:0%;
+    margin-bottom: 30px;
+    float:left;
+}
+
+.right-side {
+    display:block;
+    margin-right:auto;
+    float:left;
+}
+
+
+img[title="Image CAPTCHA"]{
+    border: 2px solid black;
+    border-radius:7px;
+    margin: 30px 20px 0px 0px;
+}
+
+.form-item-captcha-response {
+    margin-bottom: 20px
+}
